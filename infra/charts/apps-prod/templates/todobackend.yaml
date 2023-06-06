@@ -5,7 +5,7 @@ metadata:
   # Обратите внимание на namespace – он должен быть argocd
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: backend=cr.yandex/crpqmhrjrf37vj03e2lm/yc-courses/todobackend
+    argocd-image-updater.argoproj.io/image-list: backend=cr.yandex/<container registry ID>/yc-courses/todobackend
     argocd-image-updater.argoproj.io/backend.update-strategy: latest
 spec:
   destination:
